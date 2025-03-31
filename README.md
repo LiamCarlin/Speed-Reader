@@ -12,39 +12,20 @@ This is a web-based speed reading application that allows users to upload text o
 1. **Clone the Repository**
 
    ```sh
-   git clone <repository_url>
+   git clone https://github.com/LiamCarlin/Speed-Reader.git
    cd speed_reading_app
    ```
 
-2. **Configure API Key (Optional)**
+2. **Install a Local Server (Optional but Recommended)**
+If you need a local server, install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for Visual Studio Code:
 
-   If you plan to use the OpenAI API for generating summaries, update the `config.js` file with your API key and preferred settings. Otherwise, the app will use a simple summary fallback.
+1. Open Visual Studio Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
+3. Search for "Live Server" and click "Install."
+4. Once installed, open the `index.html` file in your project.
+5. Right-click on the editor and select "Open with Live Server."
 
-   - Open `config.js` and replace `'YOUR_CHATGPT_API_KEY_HERE'` with your actual API key.
-
-3. **Install a Local Server (Optional but Recommended)**
-
-   If you need a local server, install [`http-server`](https://www.npmjs.com/package/http-server):
-
-   ```sh
-   npm install -g http-server
-   ```
-
-## Running the App
-
-1. **Using a Local Server:**
-
-   From the `speed_reading_app` directory, start the server:
-
-   ```sh
-   http-server -c-1
-   ```
-
-   Then open your browser at [http://localhost:8080](http://localhost:8080).
-
-2. **Or Open Directly in a Browser:**
-
-   You can also open `index.html` directly, but note that some features (e.g., PDF.js library) might work better over HTTP.
+This will start a local server and open the app in your default browser.
 
 ## Files Overview
 
